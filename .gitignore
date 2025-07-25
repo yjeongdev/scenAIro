@@ -1,0 +1,33 @@
+# Environment variable files (e.g. API keys, secrets)
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+
+# Distribution and packaging files
+dist/
+build/
+*.egg
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+venv_scenario/
+.venv_scenario/
+
+# IDE configuration files
+.vscode/
+.idea/
+
+# Private key or secret files (optional, depending on your setup)
+*.secret
+*.key
+*.pem
+
+# test files
+*.json
+*.xlsx
