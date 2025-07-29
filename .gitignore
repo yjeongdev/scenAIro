@@ -1,5 +1,9 @@
 # Environment variable files (e.g. API keys, secrets)
 .env
+.env.*
+
+# Only allow example env files
+!*.env.example
 
 # Python cache files
 __pycache__/
@@ -12,6 +16,7 @@ dist/
 build/
 *.egg
 *.egg-info/
+*.log
 
 # Virtual environments
 venv/
@@ -22,6 +27,11 @@ venv_scenario/
 # IDE configuration files
 .vscode/
 .idea/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
 
 # Private key or secret files (optional, depending on your setup)
 *.secret

@@ -33,7 +33,7 @@ def assign_ids_to_scenarios(scenarios: List[Dict], prefix: str = "SC") -> List[D
 
 def print_scenarios(scenarios: List[Dict]) -> None:
     """
-    콘솔에 보기 좋게 시나리오들을 출력합니다. (디버깅용)
+    콘솔에 시나리오 출력 (디버깅용)
 
     Args:
         scenarios (List[Dict]): ID가 포함된 시나리오 리스트
@@ -43,3 +43,7 @@ def print_scenarios(scenarios: List[Dict]) -> None:
         print(f"  - 사전조건: {scenario['precondition']}")
         print(f"  - 예상결과: {scenario['expected_result']}")
         print()
+
+
+def format_scenarios(scenarios: List[Dict]) -> List[Dict]:
+    return assign_ids_to_scenarios(scenarios)

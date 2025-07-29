@@ -1,7 +1,7 @@
 import json
 import os
-from formatter import assign_ids_to_scenarios, print_scenarios
 
+from formatter import assign_ids_to_scenarios, print_scenarios
 from json_to_excel import json_to_excel
 from requirement_parser import parse_requirements
 from scenario_generator import generate_scenarios

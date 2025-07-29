@@ -6,7 +6,7 @@ import openai
 from dotenv import load_dotenv
 from tqdm import tqdm
 
-# 환경 변수 로드 (.env 파일에서 OPENAI_API_KEY 가져오기)
+# 환경 변수 로드
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -41,7 +41,7 @@ def generate_scenario(requirement: str) -> Dict:
         response = openai.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": system_prompt},
+                {"role": "developer", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
             temperature=0.3,
